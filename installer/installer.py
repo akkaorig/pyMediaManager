@@ -36,7 +36,7 @@ def clear_console():
 if not check_requirements():
     input('Для повторной проверки перезапустите программу')
     exit(0)
-clone_repository = subprocess.call('git clone https://github.com/iforvard/pyMediaManager.git', shell=True)
+clone_repository = subprocess.call('git clone https://github.com/akkaorig/pyMediaManager.git', shell=True)
 os.chdir('pyMediaManager')
 
 ps = subprocess.Popen('heroku login', shell=True, stdin=PIPE, stdout=PIPE)
